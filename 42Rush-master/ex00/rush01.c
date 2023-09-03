@@ -14,8 +14,8 @@ void	rush(int x, int y)
 			if ((h == 1 && v == 1) 
 				|| (h == y && v == x && v != 1 && h != 1))
 				ft_putchar('/');
-			else if ((h == 1 && v == x && v != 1) 
-				|| (h == y && v == 1 && h != 1))
+			else if ((h == 1 && v == x) 
+				|| (h == y && v == 1))
 				ft_putchar('\\');
 			else if (((h == 1 || h == y) && v != 1 && v != x) 
 				|| ((h != 1 || h != y) && (v == 1 || v == x)))
